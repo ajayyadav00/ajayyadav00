@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>DOUBLEE003</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<body class="portfolio-light-grey portfolio-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="portfolio-sidebar portfolio-bar-block portfolio-white portfolio-animate-left portfolio-text-grey portfolio-collapse portfolio-top portfolio-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="portfolio-padding-64 portfolio-center"><b>SOME<br>NAME</b></h3>
+  <a href="javascript:void(0)" onclick="portfolio_close()" class="portfolio-bar-item portfolio-button portfolio-padding portfolio-hide-large">CLOSE</a>
+  <a href="#" onclick="portfolio_close()" class="portfolio-bar-item portfolio-button">PORTFOLIO</a> 
+  <a href="#about" onclick="portfolio_close()" class="portfolio-bar-item portfolio-button">ABOUT ME</a> 
+  <a href="#contact" onclick="portfolio_close()" class="portfolio-bar-item portfolio-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="portfolio-container portfolio-top portfolio-hide-large portfolio-white portfolio-xlarge portfolio-padding-16">
+  <span class="portfolio-left portfolio-padding">SOME NAME</span>
+  <a href="javascript:void(0)" class="portfolio-right portfolio-button portfolio-white" onclick="portfolio_open()">?</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="portfolio-overlay portfolio-hide-large portfolio-animate-opacity" onclick="portfolio_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="portfolio-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="portfolio-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="portfolio-row">
+    <div class="portfolio-third">
+      <img src="img/IMG_20191129_120817.jpg" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="img/IMG_20200719_181332_Bokeh (1).jpg" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+      <img src="img/IMG_20200430_184500_Bokeh.jpg" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+    </div>
+
+    <div class="portfolio-third">
+      <img src="img/IMG_20200120_132833 (1).jpg"width:50%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="img/IMG_20200723_165851_Bokeh (1).jpg"width:50%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="img/IMG_20200430_181940_Bokeh.jpg"width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+    </div>
+    
+    <div class="portfolio-third">
+      <img src="img/IMG_20200120_133539 (1)__01.jpg"width:50%" onclick="onClick(this)" alt="Canoeing again">
+      <img src="img/IMG_20200430_183426.jpg"width:50%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <img src="img/IMG_20200120_133529.jpg"width:50%" onclick="onClick(this)" alt="What a beautiful day!">
+    </div>
+  </div>
+
+  
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="portfolio-modal portfolio-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="portfolio-button portfolio-black portfolio-xlarge portfolio-display-topright">X</span>
+    <div class="portfolio-modal-content portfolio-animate-zoom portfolio-center portfolio-transparent portfolio-padding-64">
+      <img id="img01" class="portfolio-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="portfolio-container portfolio-dark-grey portfolio-center portfolio-text-light-grey portfolio-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="img/IMG_20200826_184059.jpg" alt="Ajay" class="portfolio-image portfolio-padding-32" width="600" height="650">
+    <div class="portfolio-content portfolio-justify" style="max-width:600px">
+      <h4>AJAY YADAV</h4>
+      <p>Some text about me. I love taking photos of PEOPLE.Created, shaped, and executed visual content across platforms.
+      </p>
+      <p>Email Mail: aajayy555@gmail.com.com</p>
+      <p>Telephone: 8178734605</p>
+      <p>Instgram Id:Doublee003</p>
+      <hr class="portfolio-opacity">
+      <h4 class="portfolio-padding-16">Technical Skills</h4>
+      <p class="portfolio-wide">Photography</p>
+      <div class="portfolio-white">
+        <div class="portfolio-container portfolio-padding-small portfolio-center portfolio-grey" style="width:95%">95%</div>
+      </div>
+      <p class="portfolio-wide">Web Design</p>
+      <div class="portfolio-white">
+        <div class="portfolio-container portfolio-padding-small portfolio-center portfolio-grey" style="width:85%">85%</div>
+      </div>
+      <p class="portfolio-wide">Photoshop</p>
+      <div class="portfolio-white">
+        <div class="portfolio-container portfolio-padding-small portfolio-center portfolio-grey" style="width:80%">80%</div>
+      </div>
+      <p><button class="portfolio-button portfolio-light-grey portfolio-padding-large portfolio-margin-top portfolio-margin-bottom">Download Resume</button></p>
+      <hr class="portfolio-opacity">
+
+      <h4 class="portfolio-padding-16">How much I charge</h4>
+      <div class="portfolio-row-padding" style="margin:0 -16px">
+        <div class="portfolio-half portfolio-margin-bottom">
+          <ul class="portfolio-ul portfolio-white portfolio-center portfolio-opacity portfolio-hover-opacity-off">
+            <li class="portfolio-black portfolio-xlarge portfolio-padding-32">Basic</li>
+            <li class="portfolio-padding-16">Web Design</li>
+            <li class="portfolio-padding-16">Photography</li>
+            <li class="portfolio-padding-16">5GB Storage</li>
+            <li class="portfolio-padding-16">Mail Support</li>
+            <li class="portfolio-padding-16">
+              <h2>$ 10</h2>
+              <span class="portfolio-opacity">per month</span>
+            </li>
+            <li class="portfolio-light-grey portfolio-padding-24">
+              <button class="portfolio-button portfolio-white portfolio-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="portfolio-half">
+          <ul class="portfolio-ul portfolio-white portfolio-center portfolio-opacity portfolio-hover-opacity-off">
+            <li class="portfolio-black portfolio-xlarge portfolio-padding-32">Pro</li>
+            <li class="portfolio-padding-16">Web Design</li>
+            <li class="portfolio-padding-16">Photography</li>
+            <li class="portfolio-padding-16">50GB Storage</li>
+            <li class="portfolio-padding-16">Endless Support</li>
+            <li class="portfolio-padding-16">
+              <h2>$ 25</h2>
+              <span class="portfolio-opacity">per month</span>
+            </li>
+            <li class="portfolio-light-grey portfolio-padding-24">
+              <button class="portfolio-button portfolio-white portfolio-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="portfolio-container portfolio-light-grey portfolio-padding-32 portfolio-padding-large" id="contact">
+    <div class="portfolio-content" style="max-width:600px">
+      <h4 class="portfolio-center"><b>Contact Me</b></h4>
+      <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="portfolio-section">
+          <label>Name</label>
+          <input class="portfolio-input portfolio-border" type="text" name="Name" required>
+        </div>
+        <div class="portfolio-section">
+          <label>Email</label>
+          <input class="portfolio-input portfolio-border" type="text" name="Email" required>
+        </div>
+        <div class="portfolio-section">
+          <label>Message</label>
+          <input class="portfolio-input portfolio-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="portfolio-button portfolio-block portfolio-black portfolio-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="portfolio-container portfolio-padding-32 portfolio-grey">  
+    <div class="portfolio-row-padding">
+      <div class="portfolio-third">
+        <h3>INFO</h3>
+        <p>But the region to present developers makeup. But the life of the righteous, visually, the gate of the bed of life, ultricies congue gravida diam lorem fringilla.</p>      
+      </div>
+    
+      <div class="portfolio-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="portfolio-ul">
+          <li class="portfolio-padding-16 portfolio-hover-black">
+            <img src="img/workshop.jpg" class="portfolio-left portfolio-margin-right" style="width:50px">
+            <span class="portfolio-large">Lorem</span><br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="portfolio-padding-16 portfolio-hover-black">
+            <img src="img/gondol.jpg" class="portfolio-left portfolio-margin-right" style="width:50px">
+            <span class="portfolio-large">Ipsum</span><br>
+            <span>Praes tinci sed</span>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="portfolio-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="portfolio-tag portfolio-black portfolio-margin-bottom">Travel</span> <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">NEW DELHI</span> <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">JAIPUR</span>
+          <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">HIMACHAL PRADESH</span> <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">SIKKIM</span> <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">DIY</span>
+          <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">Ideas</span> <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">Baby</span> <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">Family</span>
+          <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">News</span> <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">Clothing</span> <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">Shopping</span>
+          <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">Sports</span> <span class="portfolio-tag portfolio-dark-grey portfolio-small portfolio-margin-bottom">Games</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="portfolio-black portfolio-center portfolio-padding-24">Powered by <a href="https://instagram.com/doublee003?igshid=18t2bawvrjxo" title="AJAY.css" target="_blank" class="portfolio-hover-opacity">AJAY.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function portfolio_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function portfolio_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
